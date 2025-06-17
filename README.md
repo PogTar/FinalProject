@@ -4,8 +4,8 @@ sample Dataset summarizes the usage behavior of about 9000 active credit card ho
 
 Following is the Data Dictionary for Credit Card dataset :-
 
-CUST_ID : Identification of Credit Card holder (Categorical)
-BALANCE : Balance amount left in their account to make purchases (
+CUST_ID : Identification of Credit Card holder (Categorical)<br>
+BALANCE : Balance amount left in their account to make purchases (<br>
 BALANCE_FREQUENCY : How frequently the Balance is updated, score between 0 and 1 (1 = frequently updated, 0 = not frequently updated)
 PURCHASES : Amount of purchases made from account
 ONEOFF_PURCHASES : Maximum purchase amount done in one-go
