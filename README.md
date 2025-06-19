@@ -38,4 +38,6 @@ Next as our all variables are numeric so we can detect outliers and delete them 
 After detecting outliers we plot correlation heatmap and we can see that there are high correlation between
 columns PURCHASE_FREQUENCY and PURCHASES_INSTALLMENTS_FREQUENCY , less high correlation is between PURCHASES_TRX and PURCHASE_FREQUENCY.
 
-Next step is making separate pipelines for preprocessing phase and one for training phase.
+Next step is making separate pipelines for preprocessing step and one for clusterig step.In preprocess Pipeline we put PCA for dimension reduction and also Standardscaler.As sklearn Grid search is not working properly so I create my custom grid search function for estimator and some possible values of parameters.
+Then for every clustering algorithm(Kmeans,Birch,Agglomerative,Dbscan) we call custom gridsearch function,find best parameters,compute silhuette scores and finally choose model which have maximum silhouette score.after which we just choose model with appropriate parameters and create final_model.<br>
+Thanks
